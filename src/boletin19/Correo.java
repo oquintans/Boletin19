@@ -1,7 +1,4 @@
 package boletin19;
-
-import java.util.ArrayList;
-
 /**
  *
  * @author oquintansocampo
@@ -9,8 +6,7 @@ import java.util.ArrayList;
 public class Correo {
 
     private String contenido;
-    private int leido;
-    public ArrayList<Correo> correo=new ArrayList<Correo>();
+    private int leido;    
 
     public Correo() {
     }
@@ -35,4 +31,10 @@ public class Correo {
     public void setLeido(int leido) {
         this.leido = leido;
     }
+
+    @Override
+    public String toString() {
+        return "Correo{" + "contenido=" + contenido + ", leido=" + leido + '}';
+    }
+    
 }
